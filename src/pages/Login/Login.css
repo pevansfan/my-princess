@@ -1,0 +1,69 @@
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); */
+    background-color: var(--background-color);
+    padding: 30px;
+}
+
+.Login .form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 1;
+    border: 2px solid var(--primary-color);
+}
+
+.Login .form-container .button-submit {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.bg_heart {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    top: -50%;
+    transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart::before {
+    top: -50%;
+    left: 0;
+}
+
+.heart::after {
+    right: -50%;
+    top: 0;
+}
+
+@keyframes love {
+    0% {
+        top: 110%;
+    }
+}

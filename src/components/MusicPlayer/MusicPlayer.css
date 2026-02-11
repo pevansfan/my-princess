@@ -1,0 +1,159 @@
+.player {
+    width: 300px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cover {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+
+    animation: rotateReverse 20s linear infinite;
+    animation-play-state: paused;
+}
+
+/* quand la musique joue */
+.cover.playing {
+    animation-play-state: running;
+}
+
+/* rotation sens inverse des aiguilles d'une montre */
+@keyframes rotateReverse {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.info p {
+    margin: 4px 0 10px;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.controls .play {
+    background: var(--primary-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--background-color);
+    font-size: 18px;
+}
+
+.progress,
+.volume {
+    width: 100%;
+}
+
+.player-container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-music {
+    background-color: var(--background-color);
+    border: 2px solid #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.list-music::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list-music::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 30px;
+}
+
+.list-music::-webkit-scrollbar-thumb {
+    background: var(--active-color); /* couleur de la barre */
+    border-radius: 30px;
+}
+
+
+.music-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.music-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.music-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* 🎯 musique active */
+.music-item.active {
+    border-color: var(--active-color);
+    /* vert Spotify-like */
+    background: rgba(255, 100, 227, 0.1);
+}
+
+.music-info h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.music-info p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    .player-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

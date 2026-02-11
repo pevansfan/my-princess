@@ -1,0 +1,21 @@
+.letter-page {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 1000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #dedede;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

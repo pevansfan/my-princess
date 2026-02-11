@@ -1,0 +1,107 @@
+.notes-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card */
+.note-card {
+    width: 220px;
+    min-height: 120px;
+    padding: 20px;
+    background: #fff6f9;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet "notes posées un peu partout" */
+.note-card:nth-child(1) {
+    --rotation: -3deg;
+}
+
+.note-card:nth-child(2) {
+    --rotation: 2deg;
+}
+
+.note-card:nth-child(3) {
+    --rotation: -1deg;
+}
+
+.note-card:nth-child(4) {
+    --rotation: 3deg;
+}
+
+.note-card:nth-child(5) {
+    --rotation: -2deg;
+}
+
+.note-card:nth-child(6) {
+    --rotation: 1deg;
+}
+
+.note-card:nth-child(7) {
+    --rotation: -4deg;
+}
+
+.note-card:nth-child(8) {
+    --rotation: 2deg;
+}
+
+.note-card:nth-child(9) {
+    --rotation: -1deg;
+}
+
+.note-card:nth-child(10) {
+    --rotation: 3deg;
+}
+
+.note-card:nth-child(11) {
+    --rotation: -2deg;
+}
+
+.note-card:nth-child(12) {
+    --rotation: 1deg;
+}
+
+.note-card:nth-child(13) {
+    --rotation: -3deg;
+}
+
+.note-card:nth-child(14) {
+    --rotation: 2deg;
+}
+
+.note-card:nth-child(15) {
+    --rotation: -1deg;
+}
+
+.note-card:hover {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.note-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+}

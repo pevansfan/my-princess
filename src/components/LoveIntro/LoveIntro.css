@@ -1,0 +1,70 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  position: fixed;
+  inset: 0;
+  background: white;
+  animation: backdiv 1s infinite;
+}
+
+.love-intro-container .heart {
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  animation: beat 1s infinite;
+  position: relative;
+}
+
+.love-intro-container .heart::before,
+.love-intro-container .heart::after {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.love-intro-container .heart::before {
+  top: -25px;
+  left: 0;
+}
+
+.love-intro-container .heart::after {
+  left: 25px;
+  top: 0;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  color: hotpink;
+  font-family: 'cursive';
+  text-align: center;
+}
+
+@keyframes backdiv {
+  50% {
+    background: #ffe6f2;
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+  }
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
