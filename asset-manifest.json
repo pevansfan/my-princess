@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-princess/static/css/main.1ce6f707.css",
+    "main.js": "/my-princess/static/js/main.e85df745.js",
+    "static/js/453.378b455f.chunk.js": "/my-princess/static/js/453.378b455f.chunk.js",
+    "static/media/IMG_1658.JPG": "/my-princess/static/media/IMG_1658.2625b5d620e424c1cc01.JPG",
+    "static/media/IMG_3661.jpeg": "/my-princess/static/media/IMG_3661.e4ef4665fddf4ef3ee60.jpeg",
+    "static/media/IMG_2410.jpeg": "/my-princess/static/media/IMG_2410.a5b34a50f58661a64f54.jpeg",
+    "static/media/me.jpeg": "/my-princess/static/media/me.a8725ce0e821c1c577ee.jpeg",
+    "static/media/IMG_3798.jpeg": "/my-princess/static/media/IMG_3798.e465bab7be16d48b67a9.jpeg",
+    "static/media/love-letter.pdf": "/my-princess/static/media/love-letter.5645255b1d71c8c640a6.pdf",
+    "static/media/IMG_5388.jpeg": "/my-princess/static/media/IMG_5388.253c9bf76739eac188c3.jpeg",
+    "static/media/princess.jpg": "/my-princess/static/media/princess.5550862660c9b200fa29.jpg",
+    "static/media/us.jpg": "/my-princess/static/media/us.4f835f5729e8baf74ecf.jpg",
+    "static/media/hearts-background.png": "/my-princess/static/media/hearts-background.02b8b24ba6d4fce72535.png",
+    "index.html": "/my-princess/index.html",
+    "main.1ce6f707.css.map": "/my-princess/static/css/main.1ce6f707.css.map",
+    "main.e85df745.js.map": "/my-princess/static/js/main.e85df745.js.map",
+    "453.378b455f.chunk.js.map": "/my-princess/static/js/453.378b455f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ce6f707.css",
+    "static/js/main.e85df745.js"
+  ]
+}
