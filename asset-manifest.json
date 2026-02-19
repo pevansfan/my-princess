@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-princess/static/css/main.1ce6f707.css",
-    "main.js": "/my-princess/static/js/main.1eb7facf.js",
+    "main.js": "/my-princess/static/js/main.c2331889.js",
     "static/js/453.378b455f.chunk.js": "/my-princess/static/js/453.378b455f.chunk.js",
     "static/media/IMG_1658.JPG": "/my-princess/static/media/IMG_1658.2625b5d620e424c1cc01.JPG",
     "static/media/IMG_3661.jpeg": "/my-princess/static/media/IMG_3661.e4ef4665fddf4ef3ee60.jpeg",
@@ -15,11 +15,11 @@
     "static/media/hearts-background.png": "/my-princess/static/media/hearts-background.02b8b24ba6d4fce72535.png",
     "index.html": "/my-princess/index.html",
     "main.1ce6f707.css.map": "/my-princess/static/css/main.1ce6f707.css.map",
-    "main.1eb7facf.js.map": "/my-princess/static/js/main.1eb7facf.js.map",
+    "main.c2331889.js.map": "/my-princess/static/js/main.c2331889.js.map",
     "453.378b455f.chunk.js.map": "/my-princess/static/js/453.378b455f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ce6f707.css",
-    "static/js/main.1eb7facf.js"
+    "static/js/main.c2331889.js"
   ]
 }
