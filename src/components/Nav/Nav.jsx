@@ -34,7 +34,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className="logo">
                     <a href={process.env.PUBLIC_URL + '/'}>
-                        <img src='/logo-princess.png' alt="Logo" />
+                        <img src={process.env.PUBLIC_URL + '/logo-princess.png'} alt="Logo" />
                     </a>
                 </div>
                 <div className="navbar-buttons">

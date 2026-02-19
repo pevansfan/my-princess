@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import LoveIntro from './components/LoveIntro/LoveIntro'
 import Login from './pages/Login/Login.jsx'
 import ProtectedRoute from './routes/ProtectedRoute'
@@ -12,36 +12,18 @@ import PublicRoute from './routes/PublicRoute.jsx'
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
                 <Route path="/music" element={<ProtectedRoute><Music /></ProtectedRoute>} />
                 <Route path="/gallery" element={<ProtectedRoute><Gallery /></ProtectedRoute>} />
                 <Route path="/notes" element={<ProtectedRoute><Notes /></ProtectedRoute>} />
-                <Route
-                    path="/login"
-                    element={
-                        <PublicRoute>
-                            <Login />
-                        </PublicRoute>
-                    }
-                />
-
+                <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
                 <Route path="/love-letter" element={<LoveLetterPage />} />
-
-                <Route
-                    path="/intro"
-                    element={
-                        <ProtectedRoute>
-                            <LoveIntro />
-                        </ProtectedRoute>
-                    }
-                />
-
-                {/* Redirection par défaut */}
+                <Route path="/intro" element={<ProtectedRoute><LoveIntro /></ProtectedRoute>} />
                 <Route path="*" element={<Login />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

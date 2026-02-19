@@ -10,11 +10,11 @@ export default function MusicPlayer() {
     const [progress, setProgress] = useState(0);
     // const [volume, setVolume] = useState(0.7);
 
-    const audioRef = useRef(new Audio(playlist[index].src));
+    const audioRef = useRef(new Audio(`${process.env.PUBLIC_URL}/${playlist[index].src}`));
 
     useEffect(() => {
         audioRef.current.pause();
-        audioRef.current = new Audio(playlist[index].src);
+        audioRef.current = new Audio(`${process.env.PUBLIC_URL}/${playlist[index].src}`);
         // audioRef.current.volume = volume;
 
         audioRef.current.ontimeupdate = () => {
@@ -26,7 +26,7 @@ export default function MusicPlayer() {
         audioRef.current.onended = next;
 
         if (isPlaying) audioRef.current.play();
-    }, [index]);
+    }, [index, isPlaying]);
 
     const playPause = () => {
         if (isPlaying) audioRef.current.pause();
@@ -58,7 +58,7 @@ export default function MusicPlayer() {
             <div className="player">
                 <img
                     key={index}
-                    src={playlist[index].cover}
+                    src={`${process.env.PUBLIC_URL}/${playlist[index].cover}`}
                     className={`cover ${isPlaying ? "playing" : ""}`}
                     alt="cover"
                 />
@@ -124,7 +124,7 @@ export default function MusicPlayer() {
                             setIsPlaying(true);
                         }}
                     >
-                        <img src={music.cover} alt={music.title} />
+                        <img src={`${process.env.PUBLIC_URL}/${music.cover}`} alt={music.title} />
                         <div className="music-info">
                             <h4>{music.title}</h4>
                             <p>{music.artist}</p>
