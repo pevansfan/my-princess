@@ -58,13 +58,17 @@
     cursor: pointer;
 }
 
-.controls .play {
+.controls .button-play {
     background: var(--primary-color);
     width: 45px;
     height: 45px;
     border-radius: 50%;
     color: var(--background-color);
     font-size: 18px;
+}
+
+.controls .button-play.loading {
+    opacity: 0.3;
 }
 
 .progress,
